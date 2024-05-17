@@ -4,25 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elite Wheels</title>
-    <!-- css link  -->
+    <!-- CSS link -->
     <link rel="stylesheet" href="style.css">
-    <!-- remix icon cdn -->
-    <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
-    rel="stylesheet"
-/>
+    <!-- Remix Icon CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
 </head>
 <body>
     <div class="wrapper">
-        <!-- navbar -->
+        <!-- Navbar -->
         <div class="navbar">
             <div id="left-nav-section">
                 <div id="nav-logo">
-                    <img src="assets/images/logo.png" alt="Elite Wheels">
+                    <a href="/"><img src="assets/images/logo.png" alt="Elite Wheels"></a>
                 </div>
                 <div id="nav-searchbar">
                     <i class="icons ri-search-2-line"></i>
-                    <input type="text" name="" id="nav-search-input" placeholder="search something here">
+                    <input type="text" name="" id="nav-search-input" placeholder="Search something here">
                     <i class="icons ri-equalizer-2-line"></i>
                 </div>
             </div>
@@ -35,6 +32,7 @@
                 </div>
             </div>
         </div>
+        <!-- Hero Section -->
         <div id="hero-section">
             <div id="display-hero-section">
                 <div id="left-display-section" class="hero-part">
@@ -67,7 +65,6 @@
                                 <option value="location1">Select your city</option>
                                 <option value="location2">Location 2</option>
                                 <option value="location3">Location 3</option>
-                                
                             </select>
                         </div>
                         <div class="date">
@@ -76,16 +73,14 @@
                                 <option value="date1">Select your date</option>
                                 <option value="date2">Date 2</option>
                                 <option value="date3">Date 3</option>
-                                
                             </select>
                         </div>
                         <div class="time">
                             <label for="time">Time:</label>
                             <select id="time">
-                                <option value="time1" >Select your time</option>
+                                <option value="time1">Select your time</option>
                                 <option value="time2">Time 2</option>
                                 <option value="time3">Time 3</option>
-                                
                             </select>
                         </div>
                     </div>
@@ -103,7 +98,6 @@
                                 <option value="location1">Select your city</option>
                                 <option value="location2">Location 2</option>
                                 <option value="location3">Location 3</option>
-                                
                             </select>
                         </div>
                         <div class="date">
@@ -112,23 +106,263 @@
                                 <option value="date1">Select your date</option>
                                 <option value="date2">Date 2</option>
                                 <option value="date3">Date 3</option>
-                                
                             </select>
                         </div>
                         <div class="time">
                             <label for="time">Time:</label>
                             <select id="time">
-                                <option value="time1" >Select your time</option>
+                                <option value="time1">Select your time</option>
                                 <option value="time2">Time 2</option>
                                 <option value="time3">Time 3</option>
-                                
                             </select>
                         </div>
                     </div>
                 </div>  
+            </div>
+        </div>
+        <!-- Select Cars Section -->
+        <div id="select-cars-section">
+            <div id="select-cars-details">
+                <aside>
+                    <div class="dropdown-header">
+                        <h2>Car Type</h2>
+                        <i class="icons ri-arrow-down-s-line"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li><input type="checkbox" id="super-cars"> <label for="super-cars">Super Cars</label></li>
+                            <li><input type="checkbox" id="suvs" checked> <label for="suvs">SUVs</label></li>
+                            <li><input type="checkbox" id="coupes"> <label for="coupes">Coupes</label></li>
+                            <li><input type="checkbox" id="convertibles"> <label for="convertibles">Convertibles</label></li>
+                            <li><input type="checkbox" id="luxury-sedans"> <label for="luxury-sedans">Luxury Sedans</label></li>
+                            <li><input type="checkbox" id="hatchbacks"> <label for="hatchbacks">Hatchbacks</label></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown-header">
+                        <h2>Seating Capacity</h2>
+                        <i class="icons ri-arrow-down-s-line"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li><input type="checkbox" id="2-seater"> <label for="2-seater">2 Seater</label></li>
+                            <li><input type="checkbox" id="4-seater"> <label for="4-seater">4 Seater</label></li>
+                            <li><input type="checkbox" id="5-seater"> <label for="5-seater">5 Seater</label></li>
+                            <li><input type="checkbox" id="7-seater"> <label for="7-seater">7 Seater</label></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown-header">
+                        <h2>Gear Transmission</h2>
+                        <i class="icons ri-arrow-down-s-line"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li><input type="checkbox" id="automatic"> <label for="automatic">Automatic</label></li>
+                            <li><input type="checkbox" id="manual"> <label for="manual">Manual</label></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown-header">
+                        <h2>Price Range</h2>
+                        <i class="icons ri-arrow-down-s-line"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li><input type="range" min="100" max="1000" value="500"></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown-header">
+                        <h2>Brands</h2>
+                        <i class="icons ri-arrow-down-s-line"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <ul class="brands">
+                            <li><img src="assets/images/Mercedes-Logo.svg.png" alt="Mercedes"></li>
+                            <li><img src="assets/images/bmw-logo.png" alt="BMW"></li>
+                            <li><img src="assets/images/audi logo.png" alt="Audi"></li>
+                            <li><img src="assets/images/landrover-logo.png" alt="Land Rover"></li>
+                            <li><img src="assets/images/jeep-logo.png" alt="Jeep"></li>
+                            <li><img src="assets/images/porsche-logo.png" alt="Porsche"></li>
+                            <li><img src="assets/images/ford-logo.png" alt="Ford"></li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+            <div id="view-cars" class="car-list">
+                <div class="car-item">
+                    <div class="image-box"> <img src="assets/images/landrover-defender-sports.png" alt="Mercedes GLC Coupe"></div>
+                    <div class="car-details-box-parent">
+                       <div class="car-name-fav"> <h3>Land Rover Defender Sports</h3> 
+                        <i class="ri-heart-line"></i>
+                    </div>
+                         <div class="car-details-box">
+                            <p><i class="ri-centos-line"></i> Automatic</p>
+                            <p><i class="ri-user-3-fill"></i> 4 Person</p>
+                            <p class="price">$390/D</p>
+                         </div>
+                    </div>
+                </div>
+                <div class="car-item">
+                    <div class="image-box"> <img src="assets/images/mercedes-benz-glc.png" alt="Mercedes GLC Coupe"></div>
+                    <div class="car-details-box-parent">
+                       <div class="car-name-fav"> <h3>Mercedes-Benz GLC Coupe</h3> 
+                        <i class="ri-heart-line"></i>
+                    </div>
+                         <div class="car-details-box">
+                            <p><i class="ri-centos-line"></i> Automatic</p>
+                            <p><i class="ri-user-3-fill"></i> 4 Person</p>
+                            <p class="price">$390/D</p>
+                         </div>
+                    </div>
+                </div>
+                <div class="car-item">
+                    <div class="image-box"> <img src="assets/images/car-no-3.png" alt="Mercedes Maybach GLS"></div>
+                    <div class="car-details-box-parent">
+                       <div class="car-name-fav"> <h3>Mercedes-Benz Maybach GLS</h3> 
+                        <i class="ri-heart-line"></i>
+                    </div>
+                         <div class="car-details-box">
+                            <p><i class="ri-centos-line"></i> Automatic</p>
+                            <p><i class="ri-user-3-fill"></i> 5 Person</p>
+                            <p class="price">$515/D</p>
+                         </div>
+                    </div>
+                </div>
+                <div class="car-item">
+                    <div class="image-box"> <img src="assets/images/car-no-4.png" alt="Range Rover"></div>
+                    <div class="car-details-box-parent">
+                       <div class="car-name-fav"> <h3>Range Rover</h3> 
+                        <i class="ri-heart-line"></i>
+                    </div>
+                         <div class="car-details-box">
+                            <p><i class="ri-centos-line"></i> Automatic</p>
+                            <p><i class="ri-user-3-fill"></i> 4 Person</p>
+                            <p class="price">$450/D</p>
+                         </div>
+                    </div>
+                </div>
+                <div class="car-item">
+                    <div class="image-box"> <img src="assets/images/car-no-5.png" alt="Land Rover Defender"></div>
+                    <div class="car-details-box-parent">
+                       <div class="car-name-fav"> <h3>Land Rover Defender Sports</h3> 
+                        <i class="ri-heart-line"></i>
+                    </div>
+                         <div class="car-details-box">
+                            <p><i class="ri-centos-line"></i> Automatic</p>
+                            <p><i class="ri-user-3-fill"></i> 5 Person</p>
+                            <p class="price">$418/D</p>
+                         </div>
+                    </div>
+                </div>
+                <div class="car-item">
+                    <div class="image-box"> <img src="assets/images/car-no-6.png" alt="Mercedes GLC Coupe"></div>
+                    <div class="car-details-box-parent">
+                       <div class="car-name-fav"> <h3>Mercedes-Benz GLC Coupe</h3> 
+                        <i class="ri-heart-line"></i>
+                    </div>
+                         <div class="car-details-box">
+                            <p><i class="ri-centos-line"></i> Automatic</p>
+                            <p><i class="ri-user-3-fill"></i> 4 Person</p>
+                            <p class="price">$390/D</p>
+                         </div>
+                    </div>
+                </div>
+                <div class="car-item">
+                    <div class="image-box"> <img src="assets/images/car-no-7.png" alt="Mercedes Maybach GLS"></div>
+                    <div class="car-details-box-parent">
+                       <div class="car-name-fav"> <h3>Mercedes-Benz Maybach GLS</h3> 
+                        <i class="ri-heart-line"></i>
+                    </div>
+                         <div class="car-details-box">
+                            <p><i class="ri-centos-line"></i> Automatic</p>
+                            <p><i class="ri-user-3-fill"></i> 5 Person</p>
+                            <p class="price">$515/D</p>
+                         </div>
+                    </div>
+                </div>
+                <div class="car-item">
+                    <div class="image-box"> <img src="assets/images/car-no-8.png" alt="Range Rover"></div>
+                    <div class="car-details-box-parent">
+                       <div class="car-name-fav"> <h3>Range Rover</h3> 
+                        <i class="ri-heart-line"></i>
+                    </div>
+                         <div class="car-details-box">
+                            <p><i class="ri-centos-line"></i> Automatic</p>
+                            <p><i class="ri-user-3-fill"></i> 4 Person</p>
+                            <p class="price">$450/D</p>
+                         </div>
+                    </div>
+                </div>
+
+
+                    <!-- non unique copied above  -->
+                <div class="car-item">
+                    <div class="image-box"> <img src="assets/images/landrover-defender-sports.png" alt="Mercedes GLC Coupe"></div>
+                    <div class="car-details-box-parent">
+                       <div class="car-name-fav"> <h3>Land Rover Defender Sports</h3> 
+                        <i class="ri-heart-line"></i>
+                    </div>
+                         <div class="car-details-box">
+                            <p><i class="ri-centos-line"></i> Automatic</p>
+                            <p><i class="ri-user-3-fill"></i> 4 Person</p>
+                            <p class="price">$390/D</p>
+                         </div>
+                    </div>
+                </div>
+                <div class="car-item">
+                    <div class="image-box"> <img src="assets/images/mercedes-benz-glc.png" alt="Mercedes GLC Coupe"></div>
+                    <div class="car-details-box-parent">
+                       <div class="car-name-fav"> <h3>Mercedes-Benz GLC Coupe</h3> 
+                        <i class="ri-heart-line"></i>
+                    </div>
+                         <div class="car-details-box">
+                            <p><i class="ri-centos-line"></i> Automatic</p>
+                            <p><i class="ri-user-3-fill"></i> 4 Person</p>
+                            <p class="price">$390/D</p>
+                         </div>
+                    </div>
+                </div>
+                <div class="car-item">
+                    <div class="image-box"> <img src="assets/images/car-no-3.png" alt="Mercedes Maybach GLS"></div>
+                    <div class="car-details-box-parent">
+                       <div class="car-name-fav"> <h3>Mercedes-Benz Maybach GLS</h3> 
+                        <i class="ri-heart-line"></i>
+                    </div>
+                         <div class="car-details-box">
+                            <p><i class="ri-centos-line"></i> Automatic</p>
+                            <p><i class="ri-user-3-fill"></i> 5 Person</p>
+                            <p class="price">$515/D</p>
+                         </div>
+                    </div>
+                </div>
+                <div class="car-item">
+                    <div class="image-box"> <img src="assets/images/car-no-4.png" alt="Range Rover"></div>
+                    <div class="car-details-box-parent">
+                       <div class="car-name-fav"> <h3>Range Rover</h3> 
+                        <i class="ri-heart-line"></i>
+                    </div>
+                         <div class="car-details-box">
+                            <p><i class="ri-centos-line"></i> Automatic</p>
+                            <p><i class="ri-user-3-fill"></i> 4 Person</p>
+                            <p class="price">$450/D</p>
+                         </div>
+                    </div>
+                </div>
+                <div class="car-item">
+                    <div class="image-box"> <img src="assets/images/car-no-5.png" alt="Land Rover Defender"></div>
+                    <div class="car-details-box-parent">
+                       <div class="car-name-fav"> <h3>Land Rover Defender Sports</h3> 
+                        <i class="ri-heart-line"></i>
+                    </div>
+                         <div class="car-details-box">
+                            <p><i class="ri-centos-line"></i> Automatic</p>
+                            <p><i class="ri-user-3-fill"></i> 5 Person</p>
+                            <p class="price">$418/D</p>
+                         </div>
+                    </div>
+                </div>
 
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

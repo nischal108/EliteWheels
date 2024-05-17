@@ -1,42 +1,34 @@
 /* import font from google fonts  */
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-
-
-
 /* //boiler plate */
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
 
-html,body{
+html, body {
     width: 100%;
     height: 100%;
-    background-color: #F6F7F9;
+    background-color: #f4f4f4;
 }
 
-
-.icons:hover{
+.icons:hover {
     cursor: pointer;
 }
 
 /* --------------------------some global variables------------- */
-
-:root{
-    --primary-color:#3563E9;
-    --primary-diff-shade:#3D5278;
-    --label-color :#C3D4E9;
-    --orange-shade:#FF4423;
+:root {
+    --primary-color: #3563E9;
+    --primary-diff-shade: #3D5278;
+    --label-color: #C3D4E9;
+    --orange-shade: #FF4423;
 }
 
-
 /* ---------------------------------navbar-------------------------------------- */
-.navbar{
+.navbar {
     width: 100%;
     height: 13vh;
     display: flex;
@@ -46,25 +38,23 @@ html,body{
     background-color: white;
 }
 
-/* left nav section  */
-
-#left-nav-section{
+/* left nav section */
+#left-nav-section {
     display: flex;
     align-items: center;
     gap: 5vw;
 }
 
-#nav-logo{
+#nav-logo {
     width: 220px;
     overflow: hidden;
-
 }
-#nav-logo>img{
+
+#nav-logo>a>img {
     width: 100%;
     object-fit: cover;
     object-position: center;
 }
-
 
 /* nav search bar */
 #nav-searchbar {
@@ -78,8 +68,8 @@ html,body{
 }
 
 #nav-search-input {
-    position: relative; 
-    z-index: 1; 
+    position: relative;
+    z-index: 1;
     width: 100%;
     height: 100%;
     padding: 0 4vw;
@@ -90,28 +80,26 @@ html,body{
     color: var(--primary-diff-shade);
 }
 
-
 .ri-search-2-line {
     z-index: 99999;
     position: absolute;
-    left: 14px; 
+    left: 14px;
     top: 50%;
     transform: translateY(-50%);
-    font-size:24px;
+    font-size: 24px;
 }
-
 
 .ri-equalizer-2-line {
     z-index: 99999;
     position: absolute;
-    right: 14px; 
+    right: 14px;
     top: 50%;
-    transform: translateY(-50%); 
-    font-size:24px;
+    transform: translateY(-50%);
+    font-size: 24px;
 }
 
-/* right nav section  */
-#right-menu-section{
+/* right nav section */
+#right-menu-section {
     display: flex;
     align-items: center;
     gap: 2vw;
@@ -142,74 +130,73 @@ html,body{
     font-weight: bold;
 }
 
-
-#profile-image{
+#profile-image {
     width: 40px;
     height: 40px;
     overflow: hidden;
     border-radius: 50%;
 }
 
-#profile-image img{
+#profile-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: top;
 }
 
-
 /* ----------------------------------------hero section ------------------------------------ */
-
-#hero-section{
+#hero-section {
     padding: 1vw 2vw;
 }
 
-
-#display-hero-section{
+#display-hero-section {
     display: flex;
     gap: 1vw;
 }
 
-.hero-part{
-    padding :1vw 2vw;
+.hero-part {
+    padding: 1vw 2vw;
     border-radius: 15px;
     width: 50%;
     color: white;
 }
-#left-display-section{
+
+#left-display-section {
     background-color: #5CAFFC;
 }
 
-#right-display-section{
+#right-display-section {
     background-color: #3563E9;
 }
-#left-display-section .text-content>button{
+
+#left-display-section .text-content>button {
     background-color: #3563E9;
 }
-#left-display-section .text-content>button:hover{
+
+#left-display-section .text-content>button:hover {
     background-color: #1f55f5;
 }
 
-#right-display-section .text-content>button{
+#right-display-section .text-content>button {
     background-color: #5CAFFC;
 }
 
-#right-display-section .text-content>button:hover{
+#right-display-section .text-content>button:hover {
     background-color: #2d9aff;
 }
 
-.hero-part p{
+.hero-part p {
     font-size: 13px;
     margin-top: 1vw;
     margin-bottom: 1vw;
 }
 
-#left-display-section>img{
+#left-display-section>img {
     margin-top: 4vw;
     width: 75%;
 }
 
-.hero-part button{
+.hero-part button {
     outline: none;
     padding: 6px 12px;
     color: white;
@@ -221,25 +208,23 @@ html,body{
     cursor: pointer;
 }
 
-
-
-.hero-part>img{
+.hero-part>img {
     margin-top: 2vw;
     width: 70%;
 }
-.hero-part .text-content{
+
+.hero-part .text-content {
     width: 80%;
 }
-.text-content h2{
+
+.text-content h2 {
     font-family: "Roboto", sans-serif;
     line-height: 50px;
     font-weight: 800;
     font-size: 2.5rem;
 }
 
-
 /*---------------------------------- location date time --- book area ---------------------- */
-
 #pickup-drop-section {
     display: flex;
     align-items: center;
@@ -247,7 +232,6 @@ html,body{
     font-weight: 600;
     gap: 3vw;
     margin-top: 2vw;
-    margin-bottom: 2vw;
     background-color: white;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
@@ -283,7 +267,7 @@ label {
 }
 
 select {
-    padding: 8px ;
+    padding: 8px;
     font-size: 13px;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -298,9 +282,10 @@ select {
     cursor: pointer;
 }
 
-.ri-arrow-up-down-line:hover{
+.ri-arrow-up-down-line:hover {
     background-color: #1f55f5;
 }
+
 /* Custom radio button */
 .pickup-drop input[type="radio"] {
     -webkit-appearance: none;
@@ -309,12 +294,236 @@ select {
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    border: 2px solid var(--primary-color); /* Use the same color as the icon background */
+    border: 2px solid var(--primary-color);
     outline: none;
     cursor: pointer;
     margin-right: 5px;
 }
 
 .pickup-drop input[type="radio"]:checked {
-    background-color: var(--primary-color); /* Use the same color as the icon background */
+    background-color: var(--primary-color);
+}
+
+/* -------------------------------------------card display section ----------------------------------------------- */
+
+/* Select Cars Section */
+#select-cars-section {
+    display: flex;
+    padding: 20px;
+    height: 100vh;
+}
+
+#select-cars-details {
+    width: 25%;
+    padding-right: 20px;
+    height: 100%;
+}
+
+#select-cars-details aside {
+    background: #f9f9f9;
+    padding: 15px 3vw;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    overflow-y: scroll;
+}
+#select-cars-details aside::-webkit-scrollbar{
+    display: none;
+}
+
+.dropdown-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px 0;
+    font-size: 22px;
+}
+
+
+.dropdown-content {
+    display: none;
+    padding-left: 20px;
+    transition: max-height 0.3s ease;
+    overflow: hidden;
+    max-height: 0;
+}
+
+.dropdown-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#select-cars-details h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #333;
+}
+
+#select-cars-details ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+#select-cars-details li {
+    margin-bottom: 10px;
+}
+
+#select-cars-details input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+#select-cars-details input[type="range"] {
+    width: 100%;
+}
+
+ /* drop down  */
+.dropdown-content{
+    padding: 0vw 1vw;
+}
+.dropdown-content ul li{
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+}
+.dropdown-content ul li input[type="checkbox"]{
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+.dropdown-content ul li input[type="checkbox"]:checked {
+    accent-color: var(--orange-shade);
+}
+
+.dropdown-content ul li label{
+    font-size: 15px;
+}
+#select-cars-details .brands {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0vw 1vw;
+}
+
+#select-cars-details .brands li {
+    width: 60px;
+    height: 60px;
+    padding: 0.4vw;
+    border: 1px solid rgb(221, 219, 219);
+    border-radius: 10px;
+    text-align: center;
+}
+
+#select-cars-details .brands li:nth-child(even) {
+    border: 1px solid var(--primary-color);
+}
+
+#select-cars-details .brands li img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+    object-position: center;
+    margin: 0 auto;
+}
+
+
+/* //------------------cars cards-----------  */
+
+
+#view-cars {
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+#view-cars::-webkit-scrollbar{
+    display: none;
+}
+
+.car-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.car-item {
+    background: #fff;
+    height: 50vh;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.car-item .image-box{
+    width: 100%;
+    height: 40%;
+    border-radius: 10px;
+}
+.car-item img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.car-details-box-parent{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.car-name-fav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1vw;
+}
+.car-name-fav .ri-heart-line{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.car-name-fav .ri-heart-line:hover{
+    color: var(--orange-shade);
+}
+
+
+.car-name-fav h3{
+    font-size: 17px;
+    width: 75%;
+}
+
+.car-details-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2vw;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.car-details-box p{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    opacity: 70%;
+}
+
+.price{
+    font-weight: bold;
+    color: black;
+    opacity: 1;
 }
