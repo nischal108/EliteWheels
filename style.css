@@ -502,6 +502,7 @@ select {
 
 
 .car-name-fav h3{
+    color: #222;
     font-size: 17px;
     width: 75%;
 }
@@ -526,4 +527,105 @@ select {
     font-weight: bold;
     color: black;
     opacity: 1;
+}
+
+
+
+/* -------------------------cities we are operating in --------------------------- */
+
+#cities-we-are-in{
+    margin-top: 1vw;
+    padding: 1vw 3vw;
+    border-radius: 7px;
+}
+#cities-we-are-in h4{
+    text-align: start;
+    font-size: 18px;
+    font-weight: 600;
+    color: #222;
+}
+
+.slider-container {
+    overflow:hidden;
+    width: 100%;
+    max-width: 100%;
+    margin: 25px auto;
+    position: relative;
+    
+}
+
+.slider {
+    display: flex;
+    width: calc(200px * 10 * 2);
+    animation: scroll 20s linear infinite;
+    gap:2vw;
+}
+
+.slide {
+    position: relative;
+    width: 200px;
+    height: 120px;
+    border-radius: 6px;
+    overflow: hidden;
+    flex: none;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+.description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index:999;
+    font-size:12px;
+    color: white;
+    padding: 10px 0;
+    transform: translateY(100%);
+    transition: transform 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.slide:hover .description {
+    transform: translateY(0);
+    opacity: 1;
+}
+.slide:hover img{
+    filter: grayscale(0.4);
+}
+
+.slide::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: linear-gradient(to top, black, transparent);
+    transition: height 0.5s ease-in-out;
+    z-index: 1;
+}
+
+.slide:hover::after {
+    height: 100%;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-200px * 5));
+    }
+}
+
+.slider:hover {
+    animation-play-state: paused;
 }
