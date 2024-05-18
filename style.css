@@ -27,7 +27,7 @@ html, body {
 ::-webkit-scrollbar-thumb {
     background: var(--primary-color);
     border-radius: 10px;
-  }
+}
 
 
 /* icons  */
@@ -710,6 +710,10 @@ select {
     .hero-part p {
         font-size: 12px;
     }
+
+    #left-display-section>img {
+        width: 100%;
+    }
     /* Pickup Drop Section */
     #pickup-drop-section{
         padding: 10px;
@@ -738,13 +742,17 @@ select {
         margin-bottom: 2px;
     }
     .ri-arrow-up-down-line{
-        font-size: 18px;
+        font-size: 25px;
+    }
+    .brands{
+        gap:1vw;
     }
 
     
     select {
+        width: 90%;
         padding: 6px;
-        font-size: 12px;
+        font-size: 0.7rem;
         border: 1px solid #ccc;
         border-radius: 10px;
     }
@@ -779,5 +787,6 @@ select {
         width: 150px;
         height: auto;
     }
+    
 }
 
