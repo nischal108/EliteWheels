@@ -15,6 +15,9 @@ html, body {
     background-color: #f4f4f4;
 }
 
+#wrapper{
+    width: 100vw;
+}
 
 /* scrollbar design  */
 ::-webkit-scrollbar {
@@ -64,6 +67,9 @@ html, body {
     overflow: hidden;
 }
 
+#mobile-menu-toggle{
+    display: none;
+}
 #nav-logo>a>img {
     width: 100%;
     object-fit: cover;
@@ -469,7 +475,8 @@ select {
 
 .car-item {
     background: #fff;
-    height: 50vh;
+    height: auto;
+    gap: 0px;
     border-radius: 10px;
     padding: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -527,7 +534,7 @@ select {
     justify-content: space-between;
     gap: 2vw;
     font-size: 14px;
-    margin-top: 10px;
+    margin-top: 1vw;
 }
 
 .car-details-box p{
@@ -643,3 +650,134 @@ select {
 .slider:hover {
     animation-play-state: paused;
 }
+
+
+
+
+/* Mobile */
+@media only screen and (max-width: 800px) {
+    /* Navbar */
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+        height: 70px;
+        border-radius: 10px;
+        overflow: hidden;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 20px;
+    }
+
+    #mobile-menu-toggle{
+        font-size: 1.3rem;
+        display: flex;
+    }
+    #nav-logo {
+        /* display: none; */
+        width: 150px;
+    }
+    /* Nav Searchbar */
+    #nav-searchbar {
+        display: none;
+    }
+    /* Right Menu Section */
+    #right-menu-section {
+        display: none;
+    }
+
+    #hero-section{
+        padding: 10px;
+    }
+    #display-hero-section {
+        gap: 10px;
+        padding: 0px;
+        flex-direction: column;
+    }
+    #display-hero-section button{
+        font-size: 12px;
+    }
+    .hero-part {
+        width: 100%;
+        padding: 2vw;
+        overflow: hidden;
+    }
+    .hero-part h2{
+        font-size: 1.2rem;
+        line-height: 25px;
+        margin-bottom: 8x;
+    }
+    .hero-part p {
+        font-size: 12px;
+    }
+    /* Pickup Drop Section */
+    #pickup-drop-section{
+        padding: 10px;
+    }
+    .locate-area,
+    .pickup-drop {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .dropdowns-locations {
+        flex-direction: column;
+        padding: 0 2vw;
+        display: flex;
+        align-items: center;
+        gap: 13px;
+        justify-content: space-between;
+    }
+    .pickup-drop label{
+        font-size: 16px;
+    }
+    
+    label {
+        display: block;
+        font-size: 13px;
+        margin-bottom: 2px;
+    }
+    .ri-arrow-up-down-line{
+        font-size: 18px;
+    }
+
+    
+    select {
+        padding: 6px;
+        font-size: 12px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+    }
+    /* Select Cars Section */
+    #select-cars-section {
+        flex-direction: column;
+        padding: 10px;
+    }
+    #select-cars-details {
+        width: 100%;
+        padding-right: 0;
+        overflow: auto;
+    }
+    #view-cars {
+        width: 100%;
+        padding: 10px;
+        margin-top: 2vw;
+    }
+    .car-item{
+        height: 80vw;
+        gap: 20px;
+    }
+
+
+    #cities-we-are-in h4{
+        font-size: 16px;
+    }
+    .slider-container{
+        margin-top: 10px;
+    }
+    .slide{
+        width: 150px;
+        height: auto;
+    }
+}
+
