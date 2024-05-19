@@ -757,9 +757,11 @@ select {
         border-radius: 10px;
     }
     /* Select Cars Section */
+
     #select-cars-section {
         flex-direction: column;
         padding: 10px;
+        height:auto;
     }
     #select-cars-details {
         width: 100%;
@@ -770,6 +772,7 @@ select {
         width: 100%;
         padding: 10px;
         margin-top: 2vw;
+        max-height: auto;
     }
     .car-item{
         height: 80vw;
