@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <img src="assets/images/logo.png" alt="">
+            </div>
+            <ul>
+                <li><a href="#dashboard"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                <li><a href="#vehicles"><i class="fas fa-car"></i> Vehicle Management</a></li>
+                <li><a href="#bookings"><i class="fas fa-book"></i> Booking Management</a></li>
+                <li><a href="#customers"><i class="fas fa-users"></i> Customer Management</a></li>
+                <li><a href="#financial"><i class="fas fa-dollar-sign"></i> Financial Management</a></li>
+                <li><a href="#promotions"><i class="fas fa-tags"></i> Promotions</a></li>
+                <li><a href="#reports"><i class="fas fa-chart-line"></i> Reports</a></li>
+                <li><a href="#users"><i class="fas fa-user-cog"></i> User Management</a></li>
+                <li><a href="#settings"><i class="fas fa-cogs"></i> Settings</a></li>
+                <li><a href="#logout"><i class="fa fa-sign-out"></i> logout</a></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <header>
+                <div id="intro">
+                    <h2>Welcome, Nischal</h2>
+                    <p>Today is a great day and we will rock in the business</p>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <div class="icons">
+                    <i class="fas fa-bell"><span class="notification-count">3</span></i>
+                    <i class="fas fa-envelope"><span class="message-count">5</span></i>
+                </div>
+                <div class="user-wrapper">
+                    <img src="https://avatars.githubusercontent.com/u/99738369?v=4" alt="User Profile Picture">
+                </div>
+            </header>
+            <main>
+                <div class="cards">
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-dollar-sign" style="color: #28a745;"></i>
+                        </div>
+                        <div class="card-info">
+                            <h3>$6,550</h3>
+                            <span>Total Earnings This Week</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-car" style="color: #ffc107;"></i>
+                        </div>
+                        <div class="card-info">
+                            <h3>10</h3>
+                            <span>Active Bookings</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-car-side" style="color: #17a2b8;"></i>
+                        </div>
+                        <div class="card-info">
+                            <h3>15</h3>
+                            <span>Vehicles Available</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-star" style="color: #fd7e14;"></i>
+                        </div>
+                        <div class="card-info">
+                            <h3>4.8</h3>
+                            <span>Customer Satisfaction</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-details-cards">
+                    <div id="left-main-contents">
+                        <div class="upcoming-bookings">
+                            <h3>Upcoming Bookings</h3>
+                            <ul>
+                                <li>
+                                    <div class="booking-info">
+                                        <p>Booking for Car A</p>
+                                        <small>In 2 hours</small>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="booking-info">
+                                        <p>Booking for Car B</p>
+                                        <small>Tomorrow at 10 AM</small>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="booking-info">
+                                        <p>Booking for Car C</p>
+                                        <small>Next Week</small>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="maintenance-activities">
+                            <h3>Maintenance Due</h3>
+                            <ul>
+                                <li>
+                                    <div class="activity-icon">
+                                        <i class="fas fa-tools" style="color: #6c757d;"></i>
+                                    </div>
+                                    <div class="activity-info">
+                                        <p>Car A - Oil Change</p>
+                                        <small>Due in 3 days</small>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="activity-icon">
+                                        <i class="fas fa-tools" style="color: #6c757d;"></i>
+                                    </div>
+                                    <div class="activity-info">
+                                        <p>Car B - Tire Replacement</p>
+                                        <small>Due in 1 week</small>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="transaction-history">
+                            <h3>Transaction History</h3>
+                            <ul>
+                                <li>
+                                    <div class="transaction-info">
+                                        <p>John Doe - Paid $200</p>
+                                        <small>1 hour ago</small>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="transaction-info">
+                                        <p>Jane Smith - Paid $150</p>
+                                        <small>2 hours ago</small>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="due-amounts">
+                            <h3>Due Amounts</h3>
+                            <ul>
+                                <li>
+                                    <div class="due-info">
+                                        <p>John Doe - $200</p>
+                                        <button class="notify-button">Send Notification</button>
+                                        <button class="blacklist-button">Blacklist Customer</button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="due-info">
+                                        <p>Jane Smith - $150</p>
+                                        <button class="notify-button">Send Notification</button>
+                                        <button class="blacklist-button">Blacklist Customer</button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="live-car-status">
+                            <h3>Live Car Status</h3>
+                            <ul>
+                                <li>
+                                    <div class="car-status-info">
+                                        <p>Car A - Booked by John Doe</p>
+                                        <small>Driver: Mark Johnson</small>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="car-status-info">
+                                        <p>Car B - Booked by Jane Smith</p>
+                                        <small>Driver: Sarah Brown</small>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="right-main-contents">
+                        <div class="recent-activities">
+                            <h3>Recent Activities</h3>
+                            <ul>
+                                <li>
+                                    <div class="activity-icon">
+                                        <i class="fas fa-car" style="color: #28a745;"></i>
+                                    </div>
+                                    <div class="activity-info">
+                                        <p>Car Arrived at Station</p>
+                                        <small>20 minutes ago</small>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="activity-icon">
+                                        <i class="fas fa-map-marker-alt" style="color: #ffc107;"></i>
+                                    </div>
+                                    <div class="activity-info">
+                                        <p>Map Boundary Warning</p>
+                                        <small>2 minutes ago</small>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="activity-icon">
+                                        <i class="fas fa-dollar-sign" style="color: #17a2b8;"></i>
+                                    </div>
+                                    <div class="activity-info">
+                                        <p>Payment Received</p>
+                                        <small>2 hours ago</small>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="activity-icon">
+                                        <i class="fas fa-user" style="color: #fd7e14;"></i>
+                                    </div>
+                                    <div class="activity-info">
+                                        <p>User Arrived at Location</p>
+                                        <small>3 hours ago</small>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="activity-icon">
+                                        <i class="fas fa-exclamation-circle" style="color: #dc3545;"></i>
+                                    </div>
+                                    <div class="activity-info">
+                                        <p>Car Not Found</p>
+                                        <small>4 hours ago</small>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="activity-icon">
+                                        <i class="fas fa-tools" style="color: #6c757d;"></i>
+                                    </div>
+                                    <div class="activity-info">
+                                        <p>Car Serviced</p>
+                                        <small>5 hours ago</small>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-location-maps">
+                    <h3>Car Location Maps</h3>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509547!2d144.9537353153157!3d-37.81720997975161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5775d8d0c89b11!2sFlinders%20St%20Station!5e0!3m2!1sen!2sau!4v1635419118857!5m2!1sen!2sau" 
+                            width="100%" 
+                            height="450" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
+
