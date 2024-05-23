@@ -2,11 +2,6 @@
 
 Welcome to Elite Wheels, your premier destination for luxury car rentals. This project is developed as part of our web technology course assignment under the guidance of web technology Professor .
 
-## Team Members
-
-- Nischal Bhattarai
-- Parbat Karki
-- Ankita Katuwal
 
 ## Description
 
