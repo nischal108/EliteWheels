@@ -601,9 +601,8 @@ select {
 }
 #cities-we-are-in h4{
     text-align: start;
-    font-size: 18px;
-    font-weight: 600;
-    color: #222;
+    font-size: 1rem;
+    color: var(--primary-color);
 }
 
 .slider-container {
@@ -692,6 +691,356 @@ select {
 }
 
 
+
+/* why choose us  */
+
+
+#why-choose-us{
+    padding: 1vw 10vw;
+}
+#why-choose-us #image-container{
+    padding: 0vw 10vw;
+    width: 100%;
+    height: 50%;
+}
+
+#image-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2vw;
+    max-width: 100%;
+    background-color: #fff;
+    gap: 3vw;
+    border-radius: 12px;
+  }
+  
+  .feature-left {
+    max-width: 45%;
+  }
+  
+  .feature-left h2 {
+    color: var(--primary-color);
+    font-size: 1rem;
+    margin-bottom: 3px;
+  }
+  
+  .feature-left h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .feature-left p {
+    font-size: 0.8rem;
+    line-height: 1.5;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .cta-button {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 15px 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cta-button:hover {
+    background-color: #2a51c5;
+  }
+  
+  .feature-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex: 1;
+    margin-bottom: 2vw;
+  }
+  
+  .feature-icon {
+    width: 50px; 
+    height: 50px; 
+    background-color: transparent;
+    border: 1px solid var(--orange-shade);
+    color: var(--primary-color);
+    border-radius: 50%;
+    padding: 1.5vw;
+    overflow: hidden;
+    text-align: center;
+    margin-right: 20px;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.feature-icon:hover{
+    background-color: var(--orange-shade);
+    color: white;
+}
+
+
+  .feature-info h3 {
+    margin: 0;
+    font-size: 1.3rem;
+  }
+  
+  .feature-info p {
+    margin: 5px 0 0;
+    font-size: 0.8rem;
+    color: #666;
+  }
+
+
+
+
+  /* testimonails section  */
+  .testimonials-container {
+    padding: 1vw 10vw;
+    width: 100%;
+    text-align: center;
+    margin: 6vw auto;
+}
+
+.testimonials-section h2 {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.testimonials-section h1 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.testimonials-section p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.testimonials-slider {
+    border-radius: 12px;
+    display: flex;
+    overflow: hidden;
+}
+
+.testimonial {
+    animation: scroll 20s linear infinite;
+    min-width: 40%;
+    box-sizing: border-box;
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 10px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.testimonial p{
+    font-size: 1rem;
+    height: 30%;
+}
+
+.client-info {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.client-info img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.client-info h3{
+    font-size: 1rem;
+    margin-bottom: 0;
+    text-align: center;
+    margin-top: 1vw;
+}
+
+.client-info span{
+    font-size: 0.7rem;
+}
+
+.client-info .rating{
+    color: var(--orange-shade);
+}
+
+
+
+/* frequently asked questiosn  */
+/* FAQ Section */
+.faq {
+    position: relative;
+    padding: 0vw 8vw;
+    font-family: Arial, sans-serif;
+}
+
+.faq h2 {
+    color: #333;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+    position: relative;
+}
+
+.faq-img-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.faq h2:after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #ff6347;
+    margin: 10px auto 0;
+}
+
+.faq details {
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin: 15px 0;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.faq details:hover {
+    background-color: #f1f1f1;
+}
+
+#faqs{
+    width: 100%;
+}
+
+.faq summary {
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.faq summary::marker {
+    display: none;
+}
+
+.faq summary:after {
+    content: '▶';
+    font-size: 20px;
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+.faq details[open] summary:after {
+    transform: rotate(90deg);
+}
+
+
+.faq p {
+    width: 100%;
+    color: #555;
+    font-size: 16px;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+ .faq img{
+    width: 40vw;
+
+ }
+
+
+ /* ----------------------------------download our app ------------------------------ */
+
+ .download-section {
+    background-color: #fff;
+    padding: 6vw 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.download-container {
+    background-image: url(/assets/images/appdownloadbg.png);
+    background-position: top right;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.text-content-download {
+    max-width: 500px;
+}
+
+.text-content-download h1 {
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+}
+
+.text-content-download p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.store-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.store-button img {
+    width: 150px;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .text-content {
+        margin: 0;
+        margin-bottom: 30px;
+    }
+    
+    .image-content img {
+        max-width: 300px;
+    }
+}
 
 
 /* Mobile */
