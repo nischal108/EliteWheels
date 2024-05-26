@@ -83,7 +83,7 @@ a,li{
 /* nav search bar */
 #nav-searchbar {
     display: flex;
-    align-items: center; /* Center items vertically */
+    align-items: center; 
     position: relative;
     width: 35vw;
     height: 3vw;
@@ -337,7 +337,7 @@ select {
     padding: 1.3vw;
     color: white;
     font-size: 1.8rem;
-    background-color: var(--primary-color); /* Assuming this is a custom variable */
+    background-color: var(--primary-color); 
     border-radius: 20%;
     cursor: pointer;
 }
@@ -491,7 +491,55 @@ select {
 }
 
 
-/* //------------------cars cards-----------  */
+/* car price range selection  */
+.range-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2em;
+}
+
+.range-container input[type="range"] {
+    flex-grow: 1;
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    border-radius: 5px;
+    background: #ddd;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+.range-container input[type="range"]:hover {
+    opacity: 1;
+}
+
+.range-container input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.range-container input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.range-container span {
+    min-width: 50px;
+    text-align: right;
+}
+
+
+/* //--------------------------------------------------------cars cards------------------------------------------------  */
 
 
 #view-cars {
@@ -592,7 +640,7 @@ select {
 
 
 
-/* -------------------------cities we are operating in --------------------------- */
+/* ------------------------------------------------cities we are operating in -------------------------------------- */
 
 #cities-we-are-in{
     margin-top: 1vw;
@@ -692,7 +740,7 @@ select {
 
 
 
-/* why choose us  */
+/*------------------------------------------------------ why choose us  ------------------------------------------*/
 
 
 #why-choose-us{
@@ -805,7 +853,7 @@ select {
 
 
 
-  /* testimonails section  */
+  /*------------------------------------------ testimonails section --------------------------------------------- */
   .testimonials-container {
     padding: 1vw 10vw;
     width: 100%;
@@ -887,7 +935,7 @@ select {
 
 
 
-/* frequently asked questiosn  */
+/*--------------------------------------------------- frequently asked questiosn ----------------------------------------------- */
 /* FAQ Section */
 .faq {
     position: relative;
@@ -978,7 +1026,7 @@ select {
  }
 
 
- /* ----------------------------------download our app ------------------------------ */
+ /* ---------------------------------------------------------download our app ---------------------------------------------- */
 
  .download-section {
     background-color: #fff;
@@ -1043,6 +1091,143 @@ select {
 }
 
 
+
+
+/*----------------------------------------- Styles for the entire footer--------------------------------------------------------- */
+footer {
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2vw 5vw;
+}
+
+.link-column {
+    margin-bottom: 1vw;
+    flex: 1;
+}
+
+.link-column h3 {
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+    position: relative;
+}
+
+.link-column h3::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: transparent;
+    margin: 10px auto 10;
+    transition: background-color 1.4s ease;
+}
+
+.link-column h3:hover::after {
+    background-color: var(--orange-shade);
+}
+.link-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.link-column ul li {
+    text-align:left;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+.link-column ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.link-column ul li a:hover {
+    color: #0044cc;
+}
+
+/* Subscribe section */
+.subscribe p {
+    margin-bottom: 10px;
+}
+
+.subscribe form {
+    display: flex;
+}
+
+.subscribe input[type="email"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+.subscribe button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #0044cc;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.subscribe button:hover {
+    background-color: #003399;
+}
+
+/* Bottom section with branding */
+.footer-bottom {
+    background-color: #24282c;
+    color: #fff;
+    padding: 1vw 2vw;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.social-icons {
+    margin-bottom: 0.4vw;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 5px;
+    text-decoration: none;
+    padding: 0.4vw;
+    font-size: 1.3em;
+}
+
+.social-icons a:hover {
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.2), inset 0 -4px 8px rgba(255, 255, 255, 0.5);
+}
+
+.footer-bottom p{
+    margin: 0vw;
+}
+.footer-policies{
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    float: left;
+}
+.footer-policies a {
+    color: #fff;
+    margin: 0.6vw 10px;
+    font-size: 0.7rem;
+    text-decoration: none;
+}
+
+.footer-policies a:hover {
+    text-decoration: underline;
+}
 /* Mobile */
 @media only screen and (max-width: 800px) {
     /* Navbar */

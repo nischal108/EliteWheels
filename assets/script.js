@@ -20,3 +20,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+
+document.getElementById('price-range').addEventListener('input', function() {
+    document.getElementById('range-value').innerText = `$${this.value}`;
+  });
