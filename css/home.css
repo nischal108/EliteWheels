@@ -1037,7 +1037,7 @@ select {
 }
 
 .download-container {
-    background-image: url(/assets/images/appdownloadbg.png);
+    background-image: url(assets/images/appdownloadbg.png);
     background-position: top right;
     background-size: cover;
     display: flex;
